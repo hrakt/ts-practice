@@ -1,43 +1,55 @@
-// const person: {
-//   name: string;
-//   age: number;
-// } = {
-// const person: {
-//   name: string;
-//   age: number;
-//   hobbies: string[];
-//   role: [number, string];
-// } = {
+// // const person: {
+// //   name: string;
+// //   age: number;
+// // } = {
+// // const person: {
+// //   name: string;
+// //   age: number;
+// //   hobbies: string[];
+// //   role: [number, string];
+// // } = {
+// //   name: "Hrak",
+// //   age: 23,
+// //   hobbies: ["Sport", "Cooking"],
+// //   role: [2, "author"],
+// // };
+
+// // const ADMIN = 0;
+// // const READ_ONLY = 1;
+
+// enum Role {
+//   ADMIN = 5,
+//   READ_ONLY,
+//   AUTHOR,
+// }
+
+// const person = {
 //   name: "Hrak",
 //   age: 23,
 //   hobbies: ["Sport", "Cooking"],
-//   role: [2, "author"],
+//   role: Role.ADMIN,
 // };
 
-// const ADMIN = 0;
-// const READ_ONLY = 1;
+// // person.role.push("admin");
+// // person.role[1] = 10;
 
-enum Role {
-  ADMIN = 5,
-  READ_ONLY,
-  AUTHOR,
-}
+// let favoriteActivities: any[];
+// favoriteActivities = ["Sports", 1];
 
-const person = {
-  name: "Hrak",
-  age: 23,
-  hobbies: ["Sport", "Cooking"],
-  role: Role.ADMIN,
-};
+// console.log(person);
 
-// person.role.push("admin");
-// person.role[1] = 10;
+// for (const hobby of person.hobbies) {
+//   console.log(hobby.toUpperCase());
+// }
 
-let favoriteActivities: any[];
-favoriteActivities = ["Sports", 1];
+// let userInput: unknown;
+// let userName: string;
 
-console.log(person);
+// userInput = 5;
+// userInput = "max";
 
-for (const hobby of person.hobbies) {
-  console.log(hobby.toUpperCase());
-}
+// function generateError(message: string, code: number): never {
+//   throw { message: message, errorCode: code };
+// }
+
+// generateError("error", 500);
