@@ -75,12 +75,27 @@ const it = new ITDepartment("id2", ["max"]);
 const accounting = AccountingDepartment.getInstance();
 const accounting2 = AccountingDepartment.getInstance();
 console.log(accounting, accounting2);
-// accounting.mostRecentReport = "New report";
-// accounting.mostRecentReport;
-// accounting.addReport("something went wrong");
-// // accounting.getReports();
-// accounting.addEmployee("max");
-// accounting.addEmployee("matt");
-// accounting.printEmployee();
-// const accountingCopy = { name: "s", describe: accounting.describe };
-// accountingCopy.describe();
+let add;
+add = (n1, n2) => {
+    return n1 + n2;
+};
+class Person {
+    constructor(n) {
+        this.age = 30;
+        if (n) {
+            this.name = n;
+        }
+    }
+    greet(phrase) {
+        if (this.name) {
+            console.log(phrase + " " + this.name);
+        }
+        else {
+            console.log("no name");
+        }
+    }
+}
+let user1;
+user1 = new Person("");
+user1.greet("hi there im ");
+console.log(user1);
