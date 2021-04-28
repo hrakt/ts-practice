@@ -19,5 +19,4 @@ function printEmployeeInformation(emp) {
         console.log("StrtDate: " + emp.startDate);
     }
 }
-console.log("hello");
 printEmployeeInformation(e1);
