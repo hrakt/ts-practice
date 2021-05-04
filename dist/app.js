@@ -1,24 +1,23 @@
 "use strict";
-var _a;
-const e1 = {
-    name: "Max",
-    privilleges: ["create-server"],
-    startDate: new Date(),
-};
-function add(a, b) {
-    if (typeof a === "string" || typeof b === "string") {
-        return a.toString() + b.toString();
+class DataStorage {
+    constructor() {
+        this.data = [];
     }
-    return a + b;
+    addItem(item) {
+        this.data.push(item);
+    }
+    removeItem(item) {
+        this.data.splice(this.data.indexOf(item), 1);
+    }
+    getItem() {
+        return [...this.data];
+    }
 }
-const result = add("max", "lol");
-result.split(" ");
-const fetchedUserData = {
-    id: "u1",
-    name: "Max",
-    job: { title: "CEO", desciription: "my own company" },
-};
-console.log((_a = fetchedUserData === null || fetchedUserData === void 0 ? void 0 : fetchedUserData.job) === null || _a === void 0 ? void 0 : _a.title);
-const userInput = null;
-const storedData = userInput !== null && userInput !== void 0 ? userInput : "Default";
-console.log(storedData);
+function createCourseGoal(title, description, date) {
+    let courseGoal = {};
+    courseGoal.title = title;
+    courseGoal.description = description;
+    courseGoal.completeUntil = date;
+    return courseGoal;
+}
+const names = ["Max", "Anna"];
